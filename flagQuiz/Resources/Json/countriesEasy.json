@@ -1,0 +1,132 @@
+{
+    "countries": [
+        {
+            "code": "AR",
+            "emoji": "🇦🇷",
+            "unicode": "U+1F1E6 U+1F1F7",
+            "name": "Argentina",
+            "title": "flag for Argentina",
+            "dialCode": "+54"
+        },
+        {
+            "code": "AU",
+            "emoji": "🇦🇺",
+            "unicode": "U+1F1E6 U+1F1FA",
+            "name": "Australia",
+            "title": "flag for Australia",
+            "dialCode": "+61"
+        },
+        {
+            "code": "BR",
+            "emoji": "🇧🇷",
+            "unicode": "U+1F1E7 U+1F1F7",
+            "name": "Brazil",
+            "title": "flag for Brazil",
+            "dialCode": "+55"
+        },
+        {
+            "code": "CA",
+            "emoji": "🇨🇦",
+            "unicode": "U+1F1E8 U+1F1E6",
+            "name": "Canada",
+            "title": "flag for Canada",
+            "dialCode": "+1"
+        },
+        {
+            "code": "CN",
+            "emoji": "🇨🇳",
+            "unicode": "U+1F1E8 U+1F1F3",
+            "name": "China",
+            "title": "flag for China",
+            "dialCode": "+86"
+        },
+        {
+            "code": "DK",
+            "emoji": "🇩🇰",
+            "unicode": "U+1F1E9 U+1F1F0",
+            "name": "Denmark",
+            "title": "flag for Denmark",
+            "dialCode": "+45"
+        },
+        {
+            "code": "FR",
+            "emoji": "🇫🇷",
+            "unicode": "U+1F1EB U+1F1F7",
+            "name": "France",
+            "title": "flag for France",
+            "dialCode": "+33"
+        },
+        {
+            "code": "DE",
+            "emoji": "🇩🇪",
+            "unicode": "U+1F1E9 U+1F1EA",
+            "name": "Germany",
+            "title": "flag for Germany",
+            "dialCode": "+49"
+        },
+        {
+            "code": "IN",
+            "emoji": "🇮🇳",
+            "unicode": "U+1F1EE U+1F1F3",
+            "name": "India",
+            "title": "flag for India",
+            "dialCode": "+91"
+        },
+        {
+            "code": "JP",
+            "emoji": "🇯🇵",
+            "unicode": "U+1F1EF U+1F1F5",
+            "name": "Japan",
+            "title": "flag for Japan",
+            "dialCode": "+81"
+        },
+        {
+            "code": "ES",
+            "emoji": "🇪🇸",
+            "unicode": "U+1F1EA U+1F1F8",
+            "name": "Spain",
+            "title": "flag for Spain",
+            "dialCode": "+34"
+        },
+        {
+            "code": "ZA",
+            "emoji": "🇿🇦",
+            "unicode": "U+1F1FF U+1F1E6",
+            "name": "South Africa",
+            "title": "flag for South Africa",
+            "dialCode": "+27"
+        },
+        {
+            "code": "KR",
+            "emoji": "🇰🇷",
+            "unicode": "U+1F1F0 U+1F1F7",
+            "name": "South Korea",
+            "title": "flag for South Korea",
+            "dialCode": "+82"
+        },
+        {
+            "code": "SE",
+            "emoji": "🇸🇪",
+            "unicode": "U+1F1F8 U+1F1EA",
+            "name": "Sweden",
+            "title": "flag for Sweden",
+            "dialCode": "+46"
+        },
+        {
+            "code": "US",
+            "emoji": "🇺🇸",
+            "unicode": "U+1F1FA U+1F1F8",
+            "name": "United States",
+            "title": "flag for United States",
+            "dialCode": "+1"
+        },
+        {
+            "code": "GB",
+            "emoji": "🇬🇧",
+            "unicode": "U+1F1EC U+1F1E7",
+            "name": "United Kingdom",
+            "title": "flag for United Kingdom",
+            "dialCode": "+44"
+        }
+    ]
+}

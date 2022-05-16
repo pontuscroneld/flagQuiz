@@ -1,0 +1,437 @@
+{
+    "countries": [
+        {
+            "code": "AD",
+            "emoji": "🇦🇩",
+            "unicode": "U+1F1E6 U+1F1E9",
+            "name": "Andorra",
+            "title": "flag for Andorra",
+            "dialCode": "+376"
+        },
+        {
+            "code": "AL",
+            "emoji": "🇦🇱",
+            "unicode": "U+1F1E6 U+1F1F1",
+            "name": "Albania",
+            "title": "flag for Albania",
+            "dialCode": "+355"
+        },
+        {
+            "code": "AT",
+            "emoji": "🇦🇹",
+            "unicode": "U+1F1E6 U+1F1F9",
+            "name": "Austria",
+            "title": "flag for Austria",
+            "dialCode": "+43"
+        },
+        {
+            "code": "AX",
+            "emoji": "🇦🇽",
+            "unicode": "U+1F1E6 U+1F1FD",
+            "name": "Åland Islands",
+            "title": "flag for Åland Islands",
+            "dialCode": ""
+        },
+        {
+            "code": "BA",
+            "emoji": "🇧🇦",
+            "unicode": "U+1F1E7 U+1F1E6",
+            "name": "Bosnia and Herzegovina",
+            "title": "flag for Bosnia and Herzegovina",
+            "dialCode": "+387"
+        },
+        {
+            "code": "BE",
+            "emoji": "🇧🇪",
+            "unicode": "U+1F1E7 U+1F1EA",
+            "name": "Belgium",
+            "title": "flag for Belgium",
+            "dialCode": "+32"
+        },
+        {
+            "code": "BG",
+            "emoji": "🇧🇬",
+            "unicode": "U+1F1E7 U+1F1EC",
+            "name": "Bulgaria",
+            "title": "flag for Bulgaria",
+            "dialCode": "+359"
+        },
+        {
+            "code": "BY",
+            "emoji": "🇧🇾",
+            "unicode": "U+1F1E7 U+1F1FE",
+            "name": "Belarus",
+            "title": "flag for Belarus",
+            "dialCode": "+375"
+        },
+        {
+            "code": "CH",
+            "emoji": "🇨🇭",
+            "unicode": "U+1F1E8 U+1F1ED",
+            "name": "Switzerland",
+            "title": "flag for Switzerland",
+            "dialCode": "+41"
+        },
+        {
+            "code": "CY",
+            "emoji": "🇨🇾",
+            "unicode": "U+1F1E8 U+1F1FE",
+            "name": "Cyprus",
+            "title": "flag for Cyprus",
+            "dialCode": "+537"
+        },
+        {
+            "code": "CZ",
+            "emoji": "🇨🇿",
+            "unicode": "U+1F1E8 U+1F1FF",
+            "name": "Czech Republic",
+            "title": "flag for Czech Republic",
+            "dialCode": "+420"
+        },
+        {
+            "code": "DE",
+            "emoji": "🇩🇪",
+            "unicode": "U+1F1E9 U+1F1EA",
+            "name": "Germany",
+            "title": "flag for Germany",
+            "dialCode": "+49"
+        },
+        {
+            "code": "DK",
+            "emoji": "🇩🇰",
+            "unicode": "U+1F1E9 U+1F1F0",
+            "name": "Denmark",
+            "title": "flag for Denmark",
+            "dialCode": "+45"
+        },
+        {
+            "code": "EE",
+            "emoji": "🇪🇪",
+            "unicode": "U+1F1EA U+1F1EA",
+            "name": "Estonia",
+            "title": "flag for Estonia",
+            "dialCode": "+372"
+        },
+        {
+            "code": "ES",
+            "emoji": "🇪🇸",
+            "unicode": "U+1F1EA U+1F1F8",
+            "name": "Spain",
+            "title": "flag for Spain",
+            "dialCode": "+34"
+        },
+        {
+            "code": "EU",
+            "emoji": "🇪🇺",
+            "unicode": "U+1F1EA U+1F1FA",
+            "name": "European Union",
+            "title": "flag for European Union"
+        },
+        {
+            "code": "FI",
+            "emoji": "🇫🇮",
+            "unicode": "U+1F1EB U+1F1EE",
+            "name": "Finland",
+            "title": "flag for Finland",
+            "dialCode": "+358"
+        },
+        {
+            "code": "FO",
+            "emoji": "🇫🇴",
+            "unicode": "U+1F1EB U+1F1F4",
+            "name": "Faroe Islands",
+            "title": "flag for Faroe Islands",
+            "dialCode": "+298"
+        },
+        {
+            "code": "FR",
+            "emoji": "🇫🇷",
+            "unicode": "U+1F1EB U+1F1F7",
+            "name": "France",
+            "title": "flag for France",
+            "dialCode": "+33"
+        },
+        {
+            "code": "GB",
+            "emoji": "🇬🇧",
+            "unicode": "U+1F1EC U+1F1E7",
+            "name": "United Kingdom",
+            "title": "flag for United Kingdom",
+            "dialCode": "+44"
+        },
+        {
+            "code": "GG",
+            "emoji": "🇬🇬",
+            "unicode": "U+1F1EC U+1F1EC",
+            "name": "Guernsey",
+            "title": "flag for Guernsey",
+            "dialCode": "+44"
+        },
+        {
+            "code": "GI",
+            "emoji": "🇬🇮",
+            "unicode": "U+1F1EC U+1F1EE",
+            "name": "Gibraltar",
+            "title": "flag for Gibraltar",
+            "dialCode": "+350"
+        },
+        {
+            "code": "GR",
+            "emoji": "🇬🇷",
+            "unicode": "U+1F1EC U+1F1F7",
+            "name": "Greece",
+            "title": "flag for Greece",
+            "dialCode": "+30"
+        },
+        {
+            "code": "HR",
+            "emoji": "🇭🇷",
+            "unicode": "U+1F1ED U+1F1F7",
+            "name": "Croatia",
+            "title": "flag for Croatia",
+            "dialCode": "+385"
+        },
+        {
+            "code": "HU",
+            "emoji": "🇭🇺",
+            "unicode": "U+1F1ED U+1F1FA",
+            "name": "Hungary",
+            "title": "flag for Hungary",
+            "dialCode": "+36"
+        },
+        {
+            "code": "IE",
+            "emoji": "🇮🇪",
+            "unicode": "U+1F1EE U+1F1EA",
+            "name": "Ireland",
+            "title": "flag for Ireland",
+            "dialCode": "+353"
+        },
+        {
+            "code": "IM",
+            "emoji": "🇮🇲",
+            "unicode": "U+1F1EE U+1F1F2",
+            "name": "Isle of Man",
+            "title": "flag for Isle of Man",
+            "dialCode": "+44"
+        },
+        {
+            "code": "IS",
+            "emoji": "🇮🇸",
+            "unicode": "U+1F1EE U+1F1F8",
+            "name": "Iceland",
+            "title": "flag for Iceland",
+            "dialCode": "+354"
+        },
+        {
+            "code": "IT",
+            "emoji": "🇮🇹",
+            "unicode": "U+1F1EE U+1F1F9",
+            "name": "Italy",
+            "title": "flag for Italy",
+            "dialCode": "+39"
+        },
+        {
+            "code": "JE",
+            "emoji": "🇯🇪",
+            "unicode": "U+1F1EF U+1F1EA",
+            "name": "Jersey",
+            "title": "flag for Jersey",
+            "dialCode": "+44"
+        },
+        {
+            "code": "LI",
+            "emoji": "🇱🇮",
+            "unicode": "U+1F1F1 U+1F1EE",
+            "name": "Liechtenstein",
+            "title": "flag for Liechtenstein",
+            "dialCode": "+423"
+        },
+        {
+            "code": "LT",
+            "emoji": "🇱🇹",
+            "unicode": "U+1F1F1 U+1F1F9",
+            "name": "Lithuania",
+            "title": "flag for Lithuania",
+            "dialCode": "+370"
+        },
+        {
+            "code": "LU",
+            "emoji": "🇱🇺",
+            "unicode": "U+1F1F1 U+1F1FA",
+            "name": "Luxembourg",
+            "title": "flag for Luxembourg",
+            "dialCode": "+352"
+        },
+        {
+            "code": "LV",
+            "emoji": "🇱🇻",
+            "unicode": "U+1F1F1 U+1F1FB",
+            "name": "Latvia",
+            "title": "flag for Latvia",
+            "dialCode": "+371"
+        },
+        {
+            "code": "MC",
+            "emoji": "🇲🇨",
+            "unicode": "U+1F1F2 U+1F1E8",
+            "name": "Monaco",
+            "title": "flag for Monaco",
+            "dialCode": "+377"
+        },
+        {
+            "code": "MD",
+            "emoji": "🇲🇩",
+            "unicode": "U+1F1F2 U+1F1E9",
+            "name": "Moldova",
+            "title": "flag for Moldova",
+            "dialCode": "+373"
+        },
+        {
+            "code": "ME",
+            "emoji": "🇲🇪",
+            "unicode": "U+1F1F2 U+1F1EA",
+            "name": "Montenegro",
+            "title": "flag for Montenegro",
+            "dialCode": "+382"
+        },
+        {
+            "code": "MK",
+            "emoji": "🇲🇰",
+            "unicode": "U+1F1F2 U+1F1F0",
+            "name": "North Macedonia",
+            "title": "flag for Macedonia",
+            "dialCode": "+389"
+        },
+    
+        {
+            "code": "MT",
+            "emoji": "🇲🇹",
+            "unicode": "U+1F1F2 U+1F1F9",
+            "name": "Malta",
+            "title": "flag for Malta",
+            "dialCode": "+356"
+        },
+        {
+            "code": "NF",
+            "emoji": "🇳🇫",
+            "unicode": "U+1F1F3 U+1F1EB",
+            "name": "Norfolk Island",
+            "title": "flag for Norfolk Island",
+            "dialCode": "+672"
+        },
+        {
+            "code": "NL",
+            "emoji": "🇳🇱",
+            "unicode": "U+1F1F3 U+1F1F1",
+            "name": "Netherlands",
+            "title": "flag for Netherlands",
+            "dialCode": "+31"
+        },
+        {
+            "code": "NO",
+            "emoji": "🇳🇴",
+            "unicode": "U+1F1F3 U+1F1F4",
+            "name": "Norway",
+            "title": "flag for Norway",
+            "dialCode": "+47"
+        },
+        
+        {
+            "code": "PL",
+            "emoji": "🇵🇱",
+            "unicode": "U+1F1F5 U+1F1F1",
+            "name": "Poland",
+            "title": "flag for Poland",
+            "dialCode": "+48"
+        },
+        {
+            "code": "PT",
+            "emoji": "🇵🇹",
+            "unicode": "U+1F1F5 U+1F1F9",
+            "name": "Portugal",
+            "title": "flag for Portugal",
+            "dialCode": "+351"
+        },
+        {
+            "code": "RO",
+            "emoji": "🇷🇴",
+            "unicode": "U+1F1F7 U+1F1F4",
+            "name": "Romania",
+            "title": "flag for Romania",
+            "dialCode": "+40"
+        },
+        {
+            "code": "RS",
+            "emoji": "🇷🇸",
+            "unicode": "U+1F1F7 U+1F1F8",
+            "name": "Serbia",
+            "title": "flag for Serbia",
+            "dialCode": "+381"
+        },
+        {
+            "code": "RU",
+            "emoji": "🇷🇺",
+            "unicode": "U+1F1F7 U+1F1FA",
+            "name": "Russia",
+            "title": "flag for Russia",
+            "dialCode": "+7"
+        },
+        {
+            "code": "SE",
+            "emoji": "🇸🇪",
+            "unicode": "U+1F1F8 U+1F1EA",
+            "name": "Sweden",
+            "title": "flag for Sweden",
+            "dialCode": "+46"
+        },
+        {
+            "code": "SI",
+            "emoji": "🇸🇮",
+            "unicode": "U+1F1F8 U+1F1EE",
+            "name": "Slovenia",
+            "title": "flag for Slovenia",
+            "dialCode": "+386"
+        },
+        {
+            "code": "SK",
+            "emoji": "🇸🇰",
+            "unicode": "U+1F1F8 U+1F1F0",
+            "name": "Slovakia",
+            "title": "flag for Slovakia",
+            "dialCode": "+421"
+        },
+        {
+            "code": "SM",
+            "emoji": "🇸🇲",
+            "unicode": "U+1F1F8 U+1F1F2",
+            "name": "San Marino",
+            "title": "flag for San Marino",
+            "dialCode": "+378"
+        },
+        {
+            "code": "TR",
+            "emoji": "🇹🇷",
+            "unicode": "U+1F1F9 U+1F1F7",
+            "name": "Turkey",
+            "title": "flag for Turkey",
+            "dialCode": "+90"
+        },
+        {
+            "code": "UA",
+            "emoji": "🇺🇦",
+            "unicode": "U+1F1FA U+1F1E6",
+            "name": "Ukraine",
+            "title": "flag for Ukraine",
+            "dialCode": "+380"
+        },
+        {
+            "code": "VA",
+            "emoji": "🇻🇦",
+            "unicode": "U+1F1FB U+1F1E6",
+            "name": "Vatican City",
+            "title": "flag for Vatican City",
+            "dialCode": "+379"
+        }
+    ]
+}
