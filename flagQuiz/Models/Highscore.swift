@@ -14,13 +14,22 @@ struct HighScore: Hashable {
     
     static func mockHighscores() -> [HighScore] {
         // Add some mock data here
-        return []
+        return [
+            HighScore(level: .easy, score: 100, type: .userEasy),
+            HighScore(level: .hard, score: 70, type: .userHard),
+            HighScore(level: .europe, score: 20, type: .userEurope)
+        ]
     }
 }
 
-enum HighScoreType {
-    case user
-    case online
+enum HighScoreType: Int {
+    case userEasy = 1
+    case onlineEasy = 2
+    case userHard = 11
+    case onlineHard = 22
+    case userEurope = 111
+    case onlineEurope = 222
+
 }
 
 

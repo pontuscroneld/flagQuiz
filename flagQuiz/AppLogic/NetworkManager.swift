@@ -30,7 +30,7 @@ class FirebaseManager: NetworkManager, ObservableObject {
         return try await findCollection(collection: "highscore").map { item in
             guard let level = DifficultyLevel(rawValue: item.documentID) else { fatalError() }
             let score = item.data().first?.value as? Int ?? 0
-            return HighScore(level: level, score: score, type: .online)
+            return HighScore(level: level, score: score, type: level.onlineType)
         }
     }
     

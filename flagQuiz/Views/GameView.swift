@@ -17,7 +17,6 @@ struct GameView: View {
              Spacer()
             VStack {
                 Text(viewModel.level.name).font(.largeTitle)
-                Text("Highscore: \(viewModel.level.highscore.score)")
             }
             
             VStack {

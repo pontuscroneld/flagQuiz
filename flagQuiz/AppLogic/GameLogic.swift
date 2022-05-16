@@ -45,8 +45,26 @@ enum DifficultyLevel: String, CaseIterable {
         }
     }
     
-    var highscore: HighScore {
-        return HighScore(level: self, score: UserDefaults.standard.integer(forKey: "highscore\(self.name)"), type: .user)
+    var localType: HighScoreType {
+        switch self {            
+        case .easy:
+            return .userEasy
+        case .hard:
+            return .userHard
+        case .europe:
+            return .userEurope
+        }
+    }
+    
+    var onlineType: HighScoreType {
+        switch self {
+        case .easy:
+            return .onlineEasy
+        case .hard:
+            return .onlineHard
+        case .europe:
+            return .onlineEurope
+        }
     }
 }
 
