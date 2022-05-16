@@ -21,9 +21,14 @@ struct ScoreView: View {
             case .error:
                 Text("Error")
             case .done(let highscores):
-                List(highscores, id: \.self) { score in
-                    Section(score.level.name) {
-                        Text("\(score.score)")
+               
+                List {
+                    ForEach(DifficultyLevel.allCases, id: \.self) { level in
+                        Section(level.name) {
+                            ForEach(viewModel.scores.filter { $0.level.rawValue == level.rawValue }, id: \.self) { score in
+                                Text("\(score.type.rawValue)")
+                            }
+                        }
                     }
                 }
             }
