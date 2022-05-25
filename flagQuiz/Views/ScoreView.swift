@@ -20,7 +20,7 @@ struct ScoreView: View {
                 ProgressView("Loading")
             case .error:
                 Text("Error")
-            case .done(let highscores):
+            case .done(_):
                
                 List {
                     ForEach(DifficultyLevel.allCases, id: \.self) { level in

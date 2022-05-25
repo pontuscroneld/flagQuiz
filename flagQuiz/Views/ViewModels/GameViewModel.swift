@@ -170,6 +170,11 @@ class GameViewModel: ObservableObject {
                 endpoint = Endpoint.highscoreEurope.path
             case .asia:
                 endpoint = Endpoint.highscoreAsia.path
+            case .south:
+                endpoint = Endpoint.highscoreSouth.path
+            case .northcentral:
+                endpoint = Endpoint.highscoreNorthCentral.path
+
             }
             
             let docRef = database.document(endpoint)

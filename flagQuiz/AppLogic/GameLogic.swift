@@ -12,6 +12,25 @@ enum DifficultyLevel: String, CaseIterable {
     case hard
     case europe
     case asia
+    case south
+    case northcentral
+    
+    var image: String {
+        switch self {
+        case .easy:
+            return "easy"
+        case .hard:
+            return "hard"
+        case .europe:
+            return "europe"
+        case .asia:
+            return "asia"
+        case .south:
+            return "south"
+        case .northcentral:
+            return "north"
+        }
+    }
     
     var path: String {
         switch self {
@@ -23,6 +42,10 @@ enum DifficultyLevel: String, CaseIterable {
             return "europe"
         case .asia:
             return "asia"
+        case .south:
+            return "south"
+        case .northcentral:
+            return "northcentral"
         }
     }
     
@@ -31,7 +54,11 @@ enum DifficultyLevel: String, CaseIterable {
         case .easy:
             return "Easy"
         case .hard:
-            return "Hard"
+            return "Whole World"
+        case .south:
+            return "South America"
+        case .northcentral:
+            return "North/Central America"
         case .europe:
             return "Europe"
         case .asia:
@@ -41,6 +68,10 @@ enum DifficultyLevel: String, CaseIterable {
     
     var endpoint: String {
         switch self {
+        case .south:
+            return Endpoint.highscoreSouth.path
+        case .northcentral:
+            return Endpoint.highscoreNorthCentral.path
         case .easy:
             return Endpoint.highscoreEurope.path
         case .hard:
@@ -62,6 +93,10 @@ enum DifficultyLevel: String, CaseIterable {
             return .userEurope
         case .asia:
             return .userAsia
+        case .south:
+            return .userSouth
+        case .northcentral:
+            return .userNorth
         }
     }
     
@@ -75,6 +110,10 @@ enum DifficultyLevel: String, CaseIterable {
             return .onlineEurope
         case .asia:
             return .onlineAsia
+        case .south:
+            return .onlineSouth
+        case .northcentral:
+            return .onlineNorth
         }
     }
     

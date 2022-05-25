@@ -17,6 +17,11 @@
 		9163189B282BFD8000A1B1E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9163189A282BFD8000A1B1E3 /* GoogleService-Info.plist */; };
 		9163189E282BFE4500A1B1E3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9163189D282BFE4500A1B1E3 /* FirebaseFirestore */; };
 		91746BCA283BC70200408186 /* FireworkParticleGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91746BC9283BC70200408186 /* FireworkParticleGeometryEffect.swift */; };
+		91746BCC283E5B1D00408186 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91746BCB283E5B1D00408186 /* FlagView.swift */; };
+		91746BD0283E66AA00408186 /* south.json in Resources */ = {isa = PBXBuildFile; fileRef = 91746BCF283E66AA00408186 /* south.json */; };
+		91746BD2283E67EE00408186 /* northcentral.json in Resources */ = {isa = PBXBuildFile; fileRef = 91746BD1283E67EE00408186 /* northcentral.json */; };
+		91746BD4283E6A9D00408186 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91746BD3283E6A9D00408186 /* StartViewModel.swift */; };
+		91746BD6283E6E7A00408186 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91746BD5283E6E7A00408186 /* LevelView.swift */; };
 		91952A30282D4F420001D22B /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91952A2F282D4F420001D22B /* ApiRouter.swift */; };
 		91952A33282EA8750001D22B /* Highscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91952A32282EA8750001D22B /* Highscore.swift */; };
 		91C3C5C7282BF2A700382F77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3C5C6282BF2A700382F77 /* NetworkManager.swift */; };
@@ -65,6 +70,11 @@
 		913F178D2825457A00434264 /* europe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = europe.json; sourceTree = "<group>"; };
 		9163189A282BFD8000A1B1E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91746BC9283BC70200408186 /* FireworkParticleGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkParticleGeometryEffect.swift; sourceTree = "<group>"; };
+		91746BCB283E5B1D00408186 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		91746BCF283E66AA00408186 /* south.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = south.json; sourceTree = "<group>"; };
+		91746BD1283E67EE00408186 /* northcentral.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = northcentral.json; sourceTree = "<group>"; };
+		91746BD3283E6A9D00408186 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		91746BD5283E6E7A00408186 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		91952A2F282D4F420001D22B /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		91952A32282EA8750001D22B /* Highscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscore.swift; sourceTree = "<group>"; };
 		91C3C5C6282BF2A700382F77 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -155,6 +165,7 @@
 			children = (
 				91D4D746281A80BF007EF0F9 /* GameViewModel.swift */,
 				913F178B28253D1C00434264 /* ScoreViewModel.swift */,
+				91746BD3283E6A9D00408186 /* StartViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -255,6 +266,8 @@
 		91D4D74C281DCBF3007EF0F9 /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				91746BD1283E67EE00408186 /* northcentral.json */,
+				91746BCF283E66AA00408186 /* south.json */,
 				9116229128368AD3006E040B /* asia.json */,
 				913F178D2825457A00434264 /* europe.json */,
 				91D4D749281AD21F007EF0F9 /* countries.json */,
@@ -267,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				91D4D74E281DCC1F007EF0F9 /* TimeBar.swift */,
+				91746BD5283E6E7A00408186 /* LevelView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -278,6 +292,7 @@
 				91D4D717281A76C1007EF0F9 /* GameView.swift */,
 				91D4D756281EB679007EF0F9 /* StartView.swift */,
 				913F178928253CAA00434264 /* ScoreView.swift */,
+				91746BCB283E5B1D00408186 /* FlagView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,8 +413,10 @@
 				913F178E2825457B00434264 /* europe.json in Resources */,
 				91D4D71A281A76C2007EF0F9 /* Assets.xcassets in Resources */,
 				91D4D74A281AD21F007EF0F9 /* countries.json in Resources */,
+				91746BD0283E66AA00408186 /* south.json in Resources */,
 				9163189B282BFD8000A1B1E3 /* GoogleService-Info.plist in Resources */,
 				9116229228368AD3006E040B /* asia.json in Resources */,
+				91746BD2283E67EE00408186 /* northcentral.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91746BCC283E5B1D00408186 /* FlagView.swift in Sources */,
 				91D4D718281A76C1007EF0F9 /* GameView.swift in Sources */,
 				913F178C28253D1C00434264 /* ScoreViewModel.swift in Sources */,
 				91D4D747281A80BF007EF0F9 /* GameViewModel.swift in Sources */,
@@ -458,9 +476,11 @@
 				913F178A28253CAA00434264 /* ScoreView.swift in Sources */,
 				91C3C5C7282BF2A700382F77 /* NetworkManager.swift in Sources */,
 				91D4D744281A7722007EF0F9 /* Country.swift in Sources */,
+				91746BD6283E6E7A00408186 /* LevelView.swift in Sources */,
 				913F1788282526CE00434264 /* AnswerButton.swift in Sources */,
 				91D4D757281EB679007EF0F9 /* StartView.swift in Sources */,
 				91D4D74F281DCC1F007EF0F9 /* TimeBar.swift in Sources */,
+				91746BD4283E6A9D00408186 /* StartViewModel.swift in Sources */,
 				91D4D716281A76C1007EF0F9 /* flagQuizApp.swift in Sources */,
 				91D4D7592820198C007EF0F9 /* GameLogic.swift in Sources */,
 				91952A30282D4F420001D22B /* ApiRouter.swift in Sources */,

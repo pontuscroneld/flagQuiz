@@ -21,6 +21,18 @@ struct Country: Codable, Hashable {
     }
 }
 
+extension Country {
+    static func mockCountries() -> [Country] {
+        // Add some mock data here
+        return [
+            Country(code: "SE", emoji: "", unicode: "U+1F1F8 U+1F1EA", name: "Sweden", title: ""),
+            Country(code: "SE", emoji: "", unicode: "U+1F1F8 U+1F1EA", name: "Sweden", title: ""),
+            Country(code: "SE", emoji: "", unicode: "U+1F1F8 U+1F1EA", name: "Sweden", title: ""),
+            Country(code: "SE", emoji: "", unicode: "U+1F1F8 U+1F1EA", name: "Sweden", title: ""),
+        ]
+    }
+}
+
 struct CountryResponse: Codable {
     var countries: [Country]
 }

@@ -8,25 +8,44 @@
 import SwiftUI
 
 struct StartView: View {
+    
+    @ObservedObject var viewModel = StartViewModel()
+    
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Flag Quiz").font(.largeTitle)
-                    .padding()
-                HStack {
-                    ForEach(DifficultyLevel.allCases, id: \.self) { level in
-                        NavigationLink(
-                            level.name,
-                            destination: GameView(viewModel: GameViewModel(difficulty: level))
-                        ).buttonStyle(.bordered)
-                            .padding(3)
+            ScrollView {
+                VStack {
+                    Text("FLAGGY")
+                        .font(.largeTitle)
+                        .bold()
+                        .foregroundColor(.orange)
+                        .padding()
+                    
+                    LazyVGrid(columns: viewModel.items, spacing: 30) {
+                        ForEach(DifficultyLevel.allCases, id: \.self) { level in
+                            NavigationLink(
+                                destination: GameView(viewModel: GameViewModel(difficulty: level))) {
+                                    LevelView(level: level)
+                                        .cornerRadius(20)
+                                        .frame(
+                                            width:UIScreen.main.bounds.width/2 - 20,
+                                            height:UIScreen.main.bounds.width/3
+                                        )
+                                }
+                                .padding(.horizontal)
+                        }
                     }
+                    
+                    NavigationLink(
+                        destination: ScoreView()
+                    ) {
+                        Text("Highscores")
+                            .frame(width: 200, height: 50, alignment: .center)
+
+                    }
+                    .padding()
+                    .buttonStyle(ColorFulButton(backgroundColor: .orange))
                 }
-                NavigationLink(
-                    "Highscores",
-                    destination: ScoreView()
-                ).buttonStyle(.bordered)
-                    .padding(3)
             }
         }
     }

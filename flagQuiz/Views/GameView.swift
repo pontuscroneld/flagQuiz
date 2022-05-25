@@ -11,7 +11,7 @@ struct GameView: View {
     
     @ObservedObject var viewModel = GameViewModel(difficulty: .easy)
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+    @State var navigate: Bool = false
 
     var body: some View {
         ZStack {
@@ -45,11 +45,31 @@ struct GameView: View {
                     .buttonStyle(ColorFulButton(
                         backgroundColor: viewModel.newState != .playing ? .green : .red))
                     
+                    Button(action: {
+                        navigate.toggle()
+                    }){
+                        Text("See countries")
+                            .frame(width: 200, height: 44, alignment: .center)
+                    }
+                    .buttonStyle(ColorFulButton(
+                        backgroundColor: .yellow))
+                    
+                    
                     Button(action: { presentationMode.wrappedValue.dismiss() }){
                         Text("Go back").frame(width: 200, height: 44, alignment: .center)
                     }
                     .buttonStyle(ColorFulButton(backgroundColor: .orange))
+                }.onAppear {
+                    self.navigate = false
                 }
+                .background(
+                    NavigationLink(
+                        destination: FlagView(flagList: viewModel.countries),
+                        isActive: $navigate) {
+                        EmptyView()
+                    }
+                    .hidden()
+                )
             case .failed:
                 Text("ERROR")
                 
@@ -63,7 +83,8 @@ struct GameView: View {
                     
                     LazyVGrid(columns: viewModel.items, spacing: 10) {
                         ForEach(viewModel.answers, id: \.self) { answer in
-                            Button(action: { viewModel.validateAnswer(pressedAnswer: answer) }) {
+                            Button(action: {
+                               viewModel.validateAnswer(pressedAnswer: answer) }) {
                                 Text(answer.name).bold()
                                     .frame(
                                         width:UIScreen.main.bounds.width/2 - 30,
@@ -85,7 +106,7 @@ struct GameView: View {
                     
                 }
             }
-        }
+        }.navigationBarHidden(true)
     }
 }
 
