@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42AF9B3CE2B47A85CF766ECB /* Pods_flagQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F89F0280BDA606821F915D /* Pods_flagQuiz.framework */; };
+		9116229228368AD3006E040B /* asia.json in Resources */ = {isa = PBXBuildFile; fileRef = 9116229128368AD3006E040B /* asia.json */; };
 		913F17862825249800434264 /* ColorfulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F17852825249800434264 /* ColorfulButton.swift */; };
 		913F1788282526CE00434264 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F1787282526CE00434264 /* AnswerButton.swift */; };
 		913F178A28253CAA00434264 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F178928253CAA00434264 /* ScoreView.swift */; };
@@ -15,6 +16,7 @@
 		913F178E2825457B00434264 /* europe.json in Resources */ = {isa = PBXBuildFile; fileRef = 913F178D2825457A00434264 /* europe.json */; };
 		9163189B282BFD8000A1B1E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9163189A282BFD8000A1B1E3 /* GoogleService-Info.plist */; };
 		9163189E282BFE4500A1B1E3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9163189D282BFE4500A1B1E3 /* FirebaseFirestore */; };
+		91746BCA283BC70200408186 /* FireworkParticleGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91746BC9283BC70200408186 /* FireworkParticleGeometryEffect.swift */; };
 		91952A30282D4F420001D22B /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91952A2F282D4F420001D22B /* ApiRouter.swift */; };
 		91952A33282EA8750001D22B /* Highscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91952A32282EA8750001D22B /* Highscore.swift */; };
 		91C3C5C7282BF2A700382F77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3C5C6282BF2A700382F77 /* NetworkManager.swift */; };
@@ -55,12 +57,14 @@
 /* Begin PBXFileReference section */
 		04D8D9EB99E466CB41893B02 /* Pods-flagQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flagQuiz.debug.xcconfig"; path = "Target Support Files/Pods-flagQuiz/Pods-flagQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		37738096170DBDF508D052FA /* Pods-flagQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flagQuiz.release.xcconfig"; path = "Target Support Files/Pods-flagQuiz/Pods-flagQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		9116229128368AD3006E040B /* asia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = asia.json; sourceTree = "<group>"; };
 		913F17852825249800434264 /* ColorfulButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulButton.swift; sourceTree = "<group>"; };
 		913F1787282526CE00434264 /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		913F178928253CAA00434264 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		913F178B28253D1C00434264 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		913F178D2825457A00434264 /* europe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = europe.json; sourceTree = "<group>"; };
 		9163189A282BFD8000A1B1E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91746BC9283BC70200408186 /* FireworkParticleGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkParticleGeometryEffect.swift; sourceTree = "<group>"; };
 		91952A2F282D4F420001D22B /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		91952A32282EA8750001D22B /* Highscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscore.swift; sourceTree = "<group>"; };
 		91C3C5C6282BF2A700382F77 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -138,6 +142,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		91746BC8283BC6E600408186 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				91746BC9283BC70200408186 /* FireworkParticleGeometryEffect.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
 		91952A31282E7C790001D22B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +224,7 @@
 		91D4D73F281A76C9007EF0F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91746BC8283BC6E600408186 /* Effects */,
 				91D4D75A28201B7A007EF0F9 /* View+Extension.swift */,
 				913F17842825248300434264 /* Buttons */,
 				91D4D74D281DCC05007EF0F9 /* Subviews */,
@@ -242,6 +255,7 @@
 		91D4D74C281DCBF3007EF0F9 /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				9116229128368AD3006E040B /* asia.json */,
 				913F178D2825457A00434264 /* europe.json */,
 				91D4D749281AD21F007EF0F9 /* countries.json */,
 				91D4D752281EB4ED007EF0F9 /* countriesEasy.json */,
@@ -385,6 +399,7 @@
 				91D4D71A281A76C2007EF0F9 /* Assets.xcassets in Resources */,
 				91D4D74A281AD21F007EF0F9 /* countries.json in Resources */,
 				9163189B282BFD8000A1B1E3 /* GoogleService-Info.plist in Resources */,
+				9116229228368AD3006E040B /* asia.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +454,7 @@
 				91D4D747281A80BF007EF0F9 /* GameViewModel.swift in Sources */,
 				91D4D75B28201B7A007EF0F9 /* View+Extension.swift in Sources */,
 				913F17862825249800434264 /* ColorfulButton.swift in Sources */,
+				91746BCA283BC70200408186 /* FireworkParticleGeometryEffect.swift in Sources */,
 				913F178A28253CAA00434264 /* ScoreView.swift in Sources */,
 				91C3C5C7282BF2A700382F77 /* NetworkManager.swift in Sources */,
 				91D4D744281A7722007EF0F9 /* Country.swift in Sources */,

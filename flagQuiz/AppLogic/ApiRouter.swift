@@ -11,6 +11,7 @@ enum Endpoint {
     case highscoreEasy
     case highscoreHard
     case highscoreEurope
+    case highscoreAsia
 }
 
 extension Endpoint {
@@ -22,6 +23,8 @@ extension Endpoint {
             return String.makeForEndpoint("hard")
         case .highscoreEurope:
             return String.makeForEndpoint("europe")
+        case .highscoreAsia:
+            return String.makeForEndpoint("asia")
         }
     }
 }

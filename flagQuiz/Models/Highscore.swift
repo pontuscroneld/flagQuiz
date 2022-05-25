@@ -17,7 +17,8 @@ struct HighScore: Hashable {
         return [
             HighScore(level: .easy, score: 100, type: .userEasy),
             HighScore(level: .hard, score: 70, type: .userHard),
-            HighScore(level: .europe, score: 20, type: .userEurope)
+            HighScore(level: .europe, score: 20, type: .userEurope),
+            HighScore(level: .asia, score: 55, type: .userAsia)
         ]
     }
 }
@@ -29,7 +30,17 @@ enum HighScoreType: Int {
     case onlineHard = 22
     case userEurope = 111
     case onlineEurope = 222
-
+    case userAsia = 1111
+    case onlineAsia = 2222
+    
+    var scoreType: String {
+        switch self {
+        case .userEasy, .userHard, .userEurope, .userAsia:
+            return "User"
+        case .onlineEasy, .onlineHard, .onlineEurope, .onlineAsia:
+            return "World"
+        }
+    }
 }
 
 

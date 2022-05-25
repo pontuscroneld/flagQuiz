@@ -10,6 +10,8 @@ import SwiftUI
 
 struct AnswerButton: ButtonStyle {
     
+    
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .background(.green)
@@ -20,6 +22,5 @@ struct AnswerButton: ButtonStyle {
                     .stroke(Color.gray, lineWidth: 2).opacity(0.2)
                     .shadow(color: .black, radius: 10, y: 5)
             )
-        
     }
 }

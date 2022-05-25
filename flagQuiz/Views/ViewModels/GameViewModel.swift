@@ -10,45 +10,65 @@ import SwiftUI
 import FirebaseFirestore
 
 class GameViewModel: ObservableObject {
+    
     enum State {
         case start
-        case failed(Error)
-        case loaded([Country])
-        case finished(Int)
+        case failed
+        case playing
+        case finished
+        
+        var buttonMessage: String {
+            switch self {
+            case .start:
+                return "Start"
+            case .playing:
+                return "Give up"
+            case .finished:
+                return "Try again"
+            case .failed:
+                return "Load"
+            }
+        }
+        
     }
     
+    @Published var newState: State
     @Published var countries: [Country] = []
     @Published var selectedCountry: Country = Country(code: "", emoji: "", unicode: "", name: "", title: "")
     @Published var answers: [Country] = []
     @Published var score: Int = 0
     @Published var timerProgress: CGFloat = 10.0
-    @Published var gameState: GameState = .start
     @Published var level: DifficultyLevel
+    @Published var showConfetti: Bool = false
+
+    
     private var questionsAnswered: CGFloat = 0.0
     let database = Firestore.firestore()
     
     var items: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
-    init(difficulty: DifficultyLevel) {
+    init(difficulty: DifficultyLevel, state: State = .start) {
+        newState = state
         level = difficulty
         countries = load(path: difficulty.path)
     }
     
     func startGame() {
-        gameState = .playing
+        newState = .playing
+        showConfetti = false
         setupQuestion()
         startTimer()
     }
     
     func stopGame() {
         checkHighscore(difficulty: level, score: score)
-        gameState = .gameover
+        newState = .finished
         questionsAnswered = 0
         score = 0
     }
     
     func triggerGame() {
-        switch gameState {
+        switch newState {
         case .playing:
             stopGame()
         default:
@@ -66,14 +86,14 @@ class GameViewModel: ObservableObject {
     func startTimer() {
         _ = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { timer in
                     withAnimation() {
-                        if self.gameState == .gameover {
+                        if self.newState == .finished {
                             timer.invalidate()
                             self.timerProgress = 10.0
                         }
                         let timerDecrease = (0.1 + CGFloat(self.questionsAnswered/20))
                         self.timerProgress -= timerDecrease
                         if self.timerProgress <= 0.0 {
-                            self.gameState = .gameover
+                            self.newState = .finished
                             self.stopGame()
                             timer.invalidate()
                             self.timerProgress = 10.0
@@ -148,10 +168,13 @@ class GameViewModel: ObservableObject {
                 endpoint = Endpoint.highscoreHard.path
             case .europe:
                 endpoint = Endpoint.highscoreEurope.path
+            case .asia:
+                endpoint = Endpoint.highscoreAsia.path
             }
             
             let docRef = database.document(endpoint)
             docRef.setData(["Score": score])
+            showConfetti = true
         }
     }
 }

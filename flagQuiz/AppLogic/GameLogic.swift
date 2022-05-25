@@ -11,6 +11,7 @@ enum DifficultyLevel: String, CaseIterable {
     case easy
     case hard
     case europe
+    case asia
     
     var path: String {
         switch self {
@@ -20,6 +21,8 @@ enum DifficultyLevel: String, CaseIterable {
             return "countries"
         case .europe:
             return "europe"
+        case .asia:
+            return "asia"
         }
     }
     
@@ -31,6 +34,8 @@ enum DifficultyLevel: String, CaseIterable {
             return "Hard"
         case .europe:
             return "Europe"
+        case .asia:
+            return "Asia"
         }
     }
     
@@ -42,6 +47,8 @@ enum DifficultyLevel: String, CaseIterable {
             return Endpoint.highscoreHard.path
         case .europe:
             return Endpoint.highscoreEurope.path
+        case .asia:
+            return Endpoint.highscoreAsia.path
         }
     }
     
@@ -53,6 +60,8 @@ enum DifficultyLevel: String, CaseIterable {
             return .userHard
         case .europe:
             return .userEurope
+        case .asia:
+            return .userAsia
         }
     }
     
@@ -64,25 +73,17 @@ enum DifficultyLevel: String, CaseIterable {
             return .onlineHard
         case .europe:
             return .onlineEurope
+        case .asia:
+            return .onlineAsia
         }
+    }
+    
+    var localHighscore: HighScore {
+        return HighScore(level: .easy, score: findLocalHighscore(level: self.name), type: self.localType)
+    }
+    
+    func findLocalHighscore(level: String) -> Int {
+        return UserDefaults.standard.integer(forKey: "highscore\(level)")
     }
 }
 
-enum GameState {
-    
-    case start
-    case playing
-    case gameover
-    
-    var buttonMessage: String {
-        switch self {
-        case .start:
-            return "Start"
-        case .playing:
-            return "Give up"
-        case .gameover:
-            return "Try again"
-
-        }
-    }
-}
